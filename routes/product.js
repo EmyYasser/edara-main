@@ -1,6 +1,5 @@
 const router = require("express").Router();
 const requireAdminAuth = require('../middleware/admin');
-// const Product = require('../db/product');
 const conn = require("../db/dbConnection");
 
 

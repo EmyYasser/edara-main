@@ -1,8 +1,6 @@
 const router = require("express").Router();
 const conn = require("../db/dbConnection");
 const requireAdminAuth = require('../middleware/admin');
-// const Supervisor = require('../db/supervisor');
-
 // Create a new supervisor
 router.post('/admin/supervisors', requireAdminAuth, async (req, res) => {
   const { name, email, password } = req.body;

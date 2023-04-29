@@ -41,7 +41,6 @@ router.post(
           ],
         });
       }
-
       // 3- PREPARE MOVIE OBJECT
       res.json(req.file.originalname)
       const movie = {
